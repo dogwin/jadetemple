@@ -1,0 +1,80 @@
+/**
+Theme Name: Jade temple
+Theme URI: http://wordpress.org/extend/themes/jade
+Author: Darren.Miao
+Author URI: http://www.dogwin.net/
+Description: dogwin do this for jade temple
+Version: 1.0
+Template:twentytwelve
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: dogwin
+*/
+@import url('../twentytwelve/style.css');
+.main-navigation {
+	margin-top:0px;
+}
+
+.clear{
+	clear:both;
+}
+/*know body begin*/
+#main #know_left{
+	float:left;
+	width:300px;
+}
+#main #know_left p{
+	text-align: left;
+	font-size: 20px;
+	color: #BA5D22;
+	line-height: 40px;
+}
+.buddhist a p{
+	display: inline;
+}
+/*know body end*/
+	
+/*footer begin*/
+#colophon #footer_menu #footer_Nav1,
+#colophon #footer_menu #footer_Nav2,
+#colophon #footer_menu #footer_Nav3,
+#colophon #footer_menu #footer_Nav4{
+	width: 213px;
+	border:1px solid #ba5d22;
+	float:left;
+	margin: 10px 5px;
+}
+#colophon #footer_menu #footer_Nav1 p,
+#colophon #footer_menu #footer_Nav2 p,
+#colophon #footer_menu #footer_Nav3 p,
+#colophon #footer_menu #footer_Nav4 p{
+	text-align: center;
+	font-size: 14px;
+	color:#BA5D22;
+}
+#colophon #footer_menu #footer_Nav1 ul li,
+#colophon #footer_menu #footer_Nav2 ul li,
+#colophon #footer_menu #footer_Nav3 ul li,
+#colophon #footer_menu #footer_Nav4 ul li{
+	text-align: center;
+}
+
+#colophon #footer_menu{
+	border-bottom: 1px solid #ededed;
+	border-bottom: 1px solid #BA5D22;
+	border-top: 1px solid #BA5D22;
+}
+footer[role="contentinfo"]{
+	padding:0;
+}
+/*footer end*/
+@media screen and (min-width: 960px){
+	body .site {
+		margin-top:0px;
+	}
+}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul{
+	border-bottom: 1px solid #BA5D22;
+	border-top: 1px solid #BA5D22;
+}
