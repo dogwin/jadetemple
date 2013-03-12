@@ -68,6 +68,12 @@ Text Domain: dogwin
 footer[role="contentinfo"]{
 	padding:0;
 }
+#theright{
+	font-size: 15px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
 /*footer end*/
 @media screen and (min-width: 960px){
 	body .site {

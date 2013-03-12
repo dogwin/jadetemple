@@ -34,7 +34,7 @@
 			</div><!-- #footer_Nav4 -->
             <div class="clear"></div>                        
 		</nav><!-- #footer_menu -->
-		
+		<div class='clear'></div>
 		<div id="theright">
 			<p>版权所有：玉佛寺&copy;2013	开发者：妙缘</p>
 		</div>
