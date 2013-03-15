@@ -11,6 +11,7 @@ function cccomm_init(){
 	register_setting('cccom_options','texttest');
 }
 add_action('admin_init','cccomm_init');
+
 function cccomm_option_page(){
 	?>
 	<div class="wrap">
