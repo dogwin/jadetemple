@@ -32,15 +32,16 @@ function my_plugin_deactivate(){
 	error_log('plugin deactivated');
 }
 register_deactivation_hook(__FILE__,"my_plugin_deactivate");*/
-/*
+
 function send_ms(){
 	global $_REQUEST;
-	
+	global $post_ID;
+	global $post;
 	$to = 'weblsfamily@gmail.com';
-	$subject = "New message to darren.miao".$_REQUEST['subject'];
-	$message = "Message from:".$_REQUEST['name']." at email:".$_REQUEST['email'].
-	":\n".$_REQUEST['comments'];
-	mail($to,$subject,$message);
+	$subject = "New message to darren.miao".$post_ID;
+	$category = get_the_category($post_ID);
+	$message = "Message from:".$category[0]->cat_name;
+	wp_mail($to,$subject,$message);
 }
-add_action('comment_post','send_ms');
-*/
+add_action('publish_post','send_ms');
+
